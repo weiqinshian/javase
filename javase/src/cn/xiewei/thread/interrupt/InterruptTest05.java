@@ -1,6 +1,6 @@
-package cn.xiewei.thread;
+package cn.xiewei.thread.interrupt;
 
-public class TestInterrupt {
+public class InterruptTest05 {
     public static void main(String[] args) throws InterruptedException {
         Thread thread = new Thread(new MyThread1());
         thread.start();
