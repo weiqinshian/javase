@@ -1,7 +1,5 @@
 package cn.xiewei.thread.interrupt;
-
 import java.io.IOException;
-
 public class InterruptTest01 {
     public static void main(String[] args) throws IOException  {
         InterruptTest01 test = new InterruptTest01();
@@ -13,8 +11,7 @@ public class InterruptTest01 {
              
         }
         thread.interrupt();
-    } 
-     
+    }      
     class MyThread extends Thread{
         @Override
         public void run() {
