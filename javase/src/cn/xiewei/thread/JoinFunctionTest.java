@@ -1,7 +1,5 @@
 package cn.xiewei.thread;
-
 import java.io.IOException;
-
 public class JoinFunctionTest {
     public static void main(String[] args) throws IOException  {
         System.out.println("进入线程"+Thread.currentThread().getName());
@@ -12,12 +10,9 @@ public class JoinFunctionTest {
             thread1.join();
             System.out.println("线程"+Thread.currentThread().getName()+"继续执行");
         } catch (InterruptedException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
-    } 
-     
-
+    }     
 }
 class MyThread1 extends Thread{
     @Override
@@ -26,7 +21,6 @@ class MyThread1 extends Thread{
         try {
             Thread.currentThread().sleep(5000);
         } catch (InterruptedException e) {
-            // TODO: handle exception
         }
         System.out.println("线程"+Thread.currentThread().getName()+"执行完毕");
     }
