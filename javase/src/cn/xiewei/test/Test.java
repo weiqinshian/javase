@@ -1,6 +1,5 @@
 package cn.xiewei.test;
 
-import java.io.File;
 import java.io.IOException;
 
 public class Test {
@@ -19,7 +18,7 @@ public class Test {
 //        str1=str1.trim();
 //        System.out.println("str1,size="+str1.length()+" ,  "+str1.trim());F:\\2.Source
         
-        java.awt.Desktop.getDesktop().open(new File("F:\\2.Source\\readMe.docx"));
+      System.out.println(127&1);
     }
 
 }
