@@ -40,13 +40,16 @@ public class ThreadPoolDemo {
         fixedThreadPool.execute(new Runnable() {
             public void run() {
                 try {
-                    System.out.println("线程池中线程名称：" +Thread.currentThread().getName()+", 匿名内部类方式创建线程任务！");
                     //三个线程并发
-                    Thread.sleep(2000);
+                    Thread.sleep(7000);//线程休眠7秒钟
+                    System.out.println("线程池中线程名称：" +Thread.currentThread().getName()+", 匿名内部类方式创建线程任务！");
+                   
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
             }
         });
+        fixedThreadPool.shutdown();
+        System.out.println("线程池关闭！");
     }
 }
