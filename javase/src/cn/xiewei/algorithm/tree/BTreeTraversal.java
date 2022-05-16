@@ -287,7 +287,6 @@ public class BTreeTraversal {
             System.out.println("一层结束");
             n = queue.size();
         }
-
     }
 
     /**
